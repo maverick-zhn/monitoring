@@ -2,7 +2,7 @@ services:
   service:
     build:
       context: .
-    image: qlever-llc/oada-service-template
+    image: monitoring
     restart: unless-stopped
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED:

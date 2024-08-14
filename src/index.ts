@@ -25,14 +25,5 @@ import '@oada/pino-debug';
 // FIXME: Add your own metrics as well
 import '@oada/lib-prom';
 
-import { connect } from '@oada/client';
-
-// Stuff from config
-const { token, domain } = config.get('oada');
-
-const conn = await connect({ token, domain });
-
-/**
- * Now do your service stuff...
- */
-await conn.head({ path: '/bookmarks' });
+//
+console.log("Service has started.");
